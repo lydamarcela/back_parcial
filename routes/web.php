@@ -12,4 +12,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource("sales", SalesController::class);
+//Route::resource("sales", SalesController::class);
+
+Route::get('/', function () {
+    return view('welcome');
+});
